@@ -11,8 +11,35 @@
     <title>$Title$</title>
   </head>
   <body>
-    <p>Witaj w aplikacji</p>
 
-    <a href="${pageContext.request.contextPath}/hello">go to hello servlet</a>
+        <h1><% out.print("Hello World from JSP!");%></h1>
+
+
+        <form action="FormServlet" method="post">
+            <p>
+                Login
+                </br>
+                <input type="text" name="login">
+            </p>
+            <p>
+                Password
+                </br>
+                <input type="password" name="password">
+            </p>
+            </br>
+            <input type="submit" value="Logi in">
+
+        </form>
+
+        <p>
+            <%
+                for(int i = 1; i <10; i++)
+                {
+                    out.println(i);
+                }
+            %>
+        </p>
+
+
   </body>
 </html>
