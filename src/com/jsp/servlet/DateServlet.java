@@ -13,6 +13,20 @@ import java.time.LocalDateTime;
 
 @WebServlet(name = "DateServlet", urlPatterns = {"/Date"})
 public class DateServlet extends HttpServlet {
+
+
+    @Override
+    public void init(){
+        System.out.println("Servlet init");
+    };
+
+    @Override
+    public void destroy(){
+        System.out.println("Servlet destroy");
+    }
+
+
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }

@@ -11,6 +11,8 @@
     <title>$Title$</title>
   </head>
   <body>
+    <p>Witaj w aplikacji</p>
 
+    <a href="${pageContext.request.contextPath}/hello">go to hello servlet</a>
   </body>
 </html>
